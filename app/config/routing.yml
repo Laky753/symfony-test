@@ -1,3 +1,9 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+lucky_number:
+    path: /lucky/number/{count}
+    defaults: {_controller: AppBundle:Test:number}
+create:
+    path: /create
+    defaults: {_controller: AppBundle:Test:create}
